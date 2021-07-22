@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+
+    <style>
+        input[type=text] {
+            h2 {
+                position: relative;
+                top-offset: 1px;
+                right-offset: 15px;
+            }
+
+            width: 100%;
+            box-sizing: border-box;
+            border: (0.0.1);
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('searchicon.png');
+            background-position: 10px 10px 20px;
+            background-color: transparent;
+            border-radius: 50%;
+            box-shadow: 5px 5px 0px 0px #FFCCCC;
+        }
+
+        input[type=text],
+        select {
+            h2 {
+                position: relative;
+                top-offset: 0px;
+                right-offset: 15px;
+
+
+            }
+
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            background-color: #CCFFFF;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            h3 {
+                position: relative;
+                bottom-offset: 5px;
+                right-offset: 50px;
+
+
+            }
+
+            width: 100%;
+            background-color: #FFCCCC;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        p {
+            position: relative;
+            margin: auto;
+            transform: scale(1);
+        }
+
+        input[type=submit]:hover {
+            position: reletive;
+            background-color: #CCFFFF;
+            right-offset: 50px;
+        }
+
+        div {
+            position: relative;
+            float: center;
+            border-radius: 10px;
+        }
+
+       
+
+        button {
+            position: relative;
+            bottom-offset: 10px;
+            left: 45%;
+            background-color: #CCFFFF;
+            box-shadow: 1px 1px 1px 1px purple;
+        }
+
+        div {
+            border: 1px solid black;
+            background-color: lightblue;
+            padding-top: 50px;
+            padding-right: 30px;
+            padding-bottom: 50px;
+            padding-left: 80px;
+            border-radius: 10px;
+            width: 100%;
+            height: 100px;
+            margin: 10px auto;
+            background: repeating-linear-gradient(35deg, #CCFFFF, #FFCCCC, rgb(204, 204, 255));
+        }
+    </style>
+    <br>
+    <style>
+        .sr-only {
+            position: absolute;
+            left: -10000px;
+            width: 1px;
+            height: 1px;
+            top: auto;
+            overflow: hidden;
+        }
+
+        body {
+            color: hsl(0, 60%, 35%);
+            background-color: whitesmoke;
+        }
+
+        div {
+            border: 1px solid black;
+            background-color: lightblue;
+            padding-top: 50px;
+            padding-right: 30px;
+            padding-bottom: 50px;
+            padding-left: 80px;
+        }
+    </style>
+    <title>Survey App</title>
+
+
+</head>
+
+<body>
+    <h1>Welcome Back !</h1>
+    <h3>Thank you for taking the time to help us improve the platform.</h3>
+
+    <h2>Survey Model 101</h2>
+    <p id="description" id="name" text="Name:">What is your Name?</p>
+
+
+    <form>
+
+        <br>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name">
+
+        <input type="text" id="lname" name="lastname" placeholder="Your last name">
+
+        <select id="improvements" name="imp" color="#FFCCCC">
+            <option text="text" value="q1">What would you like to see improved?</option>
+            <br>
+            <option value="Front-end-projects">Front-end Projets</option>
+            <option value="Back-end-projects">Back-end Projects</option>
+            <option value="Data-visualization">Data Visualization</option>
+            <option value="Challenges">Challenges</option>
+            <option value="Open-source-community">Open Source Community</option>
+            <option value="Gitter-help-rooms">Gitter help rooms</option>
+            <option value="Videos">Videos</option>
+            <option value="City-meetups">City Meetups</option>
+            <option value="Wiki">Wiki</option>
+            <option value="Forum">Forum</option>
+            <option value="Additional Courses">Additional Courses</option>
+        </select>
+
+        <input id="s" type="submit" value="Submit">
+    </form>
+
+    </div>
+    <br>
+    <section>
+        <form>
+            <p>What is your best email?</p>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email">
+
+            <fieldset>
+                <legend>What is your age group?</legend>
+                <input id="newbie" type="radio" name="levels" value="newbie">
+                <label for="newbie">Minor/Under 18/Student</label><br>
+                <input id="intermediate" type="radio" name="levels" value="intermediate">
+                <label for="intermediate">Adult/Over 18/Student</label><br>
+                <input id="gmaster" type="radio" name="levels" value="master">
+                <label for="gmaster">Adult/Over 18/Non-Student</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Which option best describes your current role?</legend>
+                <input id="rnewbie" type="radio" name="levels" value="newbie">
+                <label for="newbie">Full Time Worker</label><br>
+                <input id="rintermediate" type="radio" name="levels" value="intermediate">
+                <label for="intermediate">Full Time Learner</label><br>
+                <input id="rmaster" type="radio" name="levels" value="master">
+                <label for="pmaster">Prefer Not To Say</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Would you recommend this app to a friend?</legend>
+                <input id="fnewbie" type="radio" name="levels" value="newbie">
+                <label for="newbie">Definitely</label><br>
+                <input id="fintermediate" type="radio" name="levels" value="intermediate">
+                <label for="intermediate">Maybe</label><br>
+                <input id="fmaster" type="radio" name="levels" value="master">
+                <label for="master">Not Sure</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>What is your favorite feature?</legend>
+                <input id="ffnewbie" type="radio" name="levels" value="newbie">
+                <label for="newbie">Challenges</label><br>
+                <input id="ffintermediate" type="radio" name="levels" value="intermediate">
+                <label for="ffintermediate">Projects</label><br>
+                <input id="master" type="radio" name="levels" value="master">
+                <label for="gffmaster">Community</label>
+                <br>
+
+                <input id="master-t" type="radio-t" name="levels-t" value="true">...</l>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ship the blue gift to...</legend>
+                <p> <label> Address: <textarea name=ba autocomplete="section-blue shipping street-address"></textarea>
+                    </label>
+                <p> <label> City: <input name=bc autocomplete="section-blue shipping address-level2"> </label>
+                <p> <label> Postal Code: <input name=bp autocomplete="section-blue shipping postal-code"> </label>
+            </fieldset>
+            <fieldset>
+                <legend>Ship the red gift to...</legend>
+                <p> <label> Address: <textarea name=ra autocomplete="section-red shipping street-address"></textarea>
+                    </label>
+                <p> <label> City: <input name=rc autocomplete="section-red shipping address-level2"> </label>
+                <p> <label> Postal Code: <input name=rp autocomplete="section-red shipping postal-code"> </label>
+            </fieldset>
+
+            <br>
+            <section>
+
+            </section>
+
+
+            <div class="survey" id="root">
+                <p>Any comments or suggestions?</p>
+                <button class="btn btn-primary" name="submit" value="Submit" type="submit">Submit !</button>
+
+                <br>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."
+                    spellcheck="false" data-ms-editor="true"></textarea>
+                <br>
+
+        </form>
+        </div>
+
+
+    </section>
+    <br>
+
+
+    <script>window.console = window.console || function (t) { };</script>
+
+    <script type="module" src="/index.js"></script>
+</body>
+
+</html>
